@@ -6,7 +6,7 @@
 for i in range(7):  
     user_inp = int(input("User input: "))
 # Validate that the input is a positive integer.
-  if user_inp > 0:
+    if user_inp > 0:
         break
     else:
         print("Expected output: Please enter a positive integer.")
