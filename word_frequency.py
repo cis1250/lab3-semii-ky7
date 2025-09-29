@@ -7,7 +7,12 @@ user_inp=input("Enter a valid sentence: ")
 # 2. Split the sentence
 user_inp = user_inp.replace('.', ',')
 spl_ui=user_inp.split(',')
-print(spl_ui)
+user_sentence = user_sentence.replace('.', ' ')
+user_sentence = user_sentence.replace(',', ' ')
+user_sentence = user_sentence.replace('!', ' ')
+user_sentence = user_sentence.replace('?', ' ')
+
+all_words = user_sentence.strip().split()
 # 3. Create lists to store words and their corresponding frequencies
 words=[]
 freq=[]
