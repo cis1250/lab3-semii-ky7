@@ -3,9 +3,34 @@
 # Word frequency exercise
 # TODO: (Read detailed instructions in the Readme file)
 # 1. Prompt the user: Ask the user to enter a sentence.
+user_inp=input("Enter a valid sentence: ")
 # 2. Split the sentence
-# 3. Create lists to store words and their corresponding frequencies.
+user_inp = user_inp.replace('.', ',')
+spl_ui=user_inp.split(',')
+print(spl_ui)
+# 3. Create lists to store words and their corresponding frequencies
+words=[]
+freq=[]
 # 4. Iterate through words and update frequencies
+all_words = []
+for phrase in spl_ui:
+    words_in_phrase = phrase.strip().split()
+    all_words.extend(words_in_phrase)        
+    
+
+
+for word in all_words:
+    word = word.lower()  
+
+    if word in words:
+        idx = words.index(word)  
+        freq[idx] += 1           
+    else:
+        words.append(word)      
+        freq.append(1)   
+for i in range(len(words)): 
+    print(f"{words[i]}: {freq[i]}")
+
 
 import re
 
