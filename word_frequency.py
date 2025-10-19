@@ -65,3 +65,5 @@ while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
     
+
+# your code has an error, but it's very close to working. -2
