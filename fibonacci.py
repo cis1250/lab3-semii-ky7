@@ -19,3 +19,5 @@ for i in range(user_inp):
     print(a, end=" ")
     a, b = b, a + b
 print()
+
+#your code is not supposed to break when you enter a char -1
